@@ -19,6 +19,8 @@
     --blue-light: #6BBFE3;
     --blue-faint: rgba(59,159,209,0.12);
     --blue-faint-border: rgba(59,159,209,0.28);
+    --yellow: #F0D875;
+    --yellow-dark: #C9B455;
     --gray-50: #F5F7FA;
     --gray-100: #E8ECF2;
     --gray-200: #CDD3DF;
@@ -108,7 +110,7 @@
     transition: background 0.2s !important;
   }
 
-  .nav-cta:hover { background: var(--blue-dark) !important; }
+  .nav-cta:hover { background: var(--blue-dark) !important; border-bottom: 2px solid var(--yellow) !important; }
 
   /* ── HERO ── */
   .hero {
@@ -124,9 +126,9 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--blue-faint);
-    border: 1px solid var(--blue-faint-border);
-    color: var(--blue-light);
+    background: rgba(240,216,117,0.12);
+    border: 1px solid rgba(240,216,117,0.3);
+    color: var(--yellow);
     font-size: 13px;
     font-weight: 500;
     padding: 5px 12px;
@@ -213,7 +215,7 @@
 
   .stat-card {
     background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(59,159,209,0.2);
+    border: 1px solid rgba(240,216,117,0.2);
     border-radius: var(--radius-lg);
     padding: 24px 20px;
   }
@@ -221,7 +223,7 @@
   .stat-card .num {
     font-family: 'DM Serif Display', serif;
     font-size: 36px;
-    color: var(--blue-light);
+    color: var(--yellow);
     line-height: 1;
     margin-bottom: 6px;
   }
@@ -263,7 +265,7 @@
     font-weight: 600;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    color: var(--blue-dark);
+    color: var(--yellow-dark);
     margin-bottom: 12px;
   }
 
@@ -302,7 +304,7 @@
   }
 
   .service-card:hover {
-    border-color: var(--blue);
+    border-color: var(--yellow);
     transform: translateY(-3px);
     box-shadow: 0 8px 24px rgba(12,30,69,0.08);
   }
@@ -351,7 +353,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: var(--blue-faint);
+    background: rgba(240,216,117,0.12);
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -402,7 +404,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--blue);
+    background: var(--yellow);
     flex-shrink: 0;
   }
 
@@ -419,8 +421,8 @@
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: var(--navy);
-    color: var(--white);
+    background: var(--yellow);
+    color: var(--navy);
     font-family: 'DM Serif Display', serif;
     font-size: 22px;
     display: flex;
@@ -602,7 +604,7 @@
     transition: color 0.2s;
   }
 
-  .footer-col a:hover { color: var(--blue-light); }
+  .footer-col a:hover { color: var(--yellow); }
 
   .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.08);
@@ -1626,7 +1628,7 @@ MEROTG0+pciKctGLin2OPxEX8232KREwcmgepVomWOiPsU7jexHRtPRVIo75JcU+xS1oaeBPoVSI
 gSwDxGFGOGFKISU+Lb1GfSm43sVSJgjCI3W9ibrexSiDCI3R2JujOeIKlEJwUiMDkSpLQe1SiDBT
 uNzlTuhSixUUtgRgd6bveVKLIjCKSwdpU4ClEJKSwEk5PFAwAYGVUiY3yMbYIwO9MDvUogwQWgjH
 FQ1jW8sqpFGBgYCIikDCjcb2KUQLYgDHUoWgqUTAKdxvYm43sVSIRgp3G9ibjexVIgwU7jexTuhS
-iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; width: auto; display: block; object-fit: contain;">
+iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; width: auto; display: block; object-fit: contain;">
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
@@ -1641,8 +1643,8 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
   <div>
     <div class="hero-label">
       <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-        <circle cx="6" cy="6" r="5" fill="#3B9FD1" opacity="0.3"/>
-        <circle cx="6" cy="6" r="3" fill="#3B9FD1"/>
+        <circle cx="6" cy="6" r="5" fill="#F0D875" opacity="0.3"/>
+        <circle cx="6" cy="6" r="3" fill="#F0D875"/>
       </svg>
       Licensed Master Electrician — Serving Houston, TX &amp; Surrounding Areas
     </div>
@@ -1680,27 +1682,27 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-item">
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#3B9FD1"/></svg>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#F0D875"/></svg>
     Licensed Master Electricians
   </div>
   <div class="trust-item">
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#3B9FD1"/></svg>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#F0D875"/></svg>
     Fully Bonded &amp; Insured
   </div>
   <div class="trust-item">
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#3B9FD1"/></svg>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#F0D875"/></svg>
     Free Estimates on All Projects
   </div>
   <div class="trust-item">
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#3B9FD1"/></svg>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#F0D875"/></svg>
     Workmanship Warranty Included
   </div>
   <div class="trust-item">
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#3B9FD1"/></svg>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#F0D875"/></svg>
     Same-Day Emergency Response
   </div>
   <div class="trust-item">
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#3B9FD1"/></svg>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#F0D875"/></svg>
     Se Habla Español
   </div>
 </div>
@@ -1768,7 +1770,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
       <div class="why-list">
         <div class="why-item">
           <div class="why-check">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="#3B9FD1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="#F0D875" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div>
             <h4>Upfront, transparent pricing</h4>
@@ -1777,7 +1779,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
         </div>
         <div class="why-item">
           <div class="why-check">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="#3B9FD1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="#F0D875" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div>
             <h4>On-time, every time</h4>
@@ -1786,7 +1788,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
         </div>
         <div class="why-item">
           <div class="why-check">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="#3B9FD1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="#F0D875" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div>
             <h4>Code-compliant work, every job</h4>
@@ -1795,7 +1797,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
         </div>
         <div class="why-item">
           <div class="why-check">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="#3B9FD1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="#F0D875" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div>
             <h4>2-year workmanship warranty</h4>
@@ -1909,7 +1911,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
     <div class="contact-info">
       <div class="contact-detail">
         <div class="contact-icon">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5C3 4.4 3.4 4 4 4H6.3C6.8 4 7.2 4.3 7.4 4.8L8.4 7.3C8.6 7.7 8.5 8.2 8.1 8.5L7 9.6C7.9 11.4 9.6 13.1 11.4 14L12.5 12.9C12.8 12.5 13.3 12.4 13.7 12.6L16.2 13.6C16.7 13.8 17 14.2 17 14.7V17C17 17.6 16.6 18 16 18C9 18 2 11 2 4C2 3.4 2.4 3 3 3V5Z" stroke="#3B9FD1" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5C3 4.4 3.4 4 4 4H6.3C6.8 4 7.2 4.3 7.4 4.8L8.4 7.3C8.6 7.7 8.5 8.2 8.1 8.5L7 9.6C7.9 11.4 9.6 13.1 11.4 14L12.5 12.9C12.8 12.5 13.3 12.4 13.7 12.6L16.2 13.6C16.7 13.8 17 14.2 17 14.7V17C17 17.6 16.6 18 16 18C9 18 2 11 2 4C2 3.4 2.4 3 3 3V5Z" stroke="#F0D875" stroke-width="1.5" stroke-linejoin="round"/></svg>
         </div>
         <div>
           <h4>Phone</h4>
@@ -1918,7 +1920,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
       </div>
       <div class="contact-detail">
         <div class="contact-icon">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5H17C17.6 5 18 5.4 18 6V14C18 14.6 17.6 15 17 15H3C2.4 15 2 14.6 2 14V6C2 5.4 2.4 5 3 5Z" stroke="#3B9FD1" stroke-width="1.5"/><path d="M2 6L10 11L18 6" stroke="#3B9FD1" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5H17C17.6 5 18 5.4 18 6V14C18 14.6 17.6 15 17 15H3C2.4 15 2 14.6 2 14V6C2 5.4 2.4 5 3 5Z" stroke="#F0D875" stroke-width="1.5"/><path d="M2 6L10 11L18 6" stroke="#F0D875" stroke-width="1.5" stroke-linejoin="round"/></svg>
         </div>
         <div>
           <h4>Email</h4>
@@ -1927,7 +1929,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
       </div>
       <div class="contact-detail">
         <div class="contact-icon">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C7.2 2 5 4.2 5 7C5 10.9 10 17 10 17C10 17 15 10.9 15 7C15 4.2 12.8 2 10 2Z" stroke="#3B9FD1" stroke-width="1.5"/><circle cx="10" cy="7" r="2" stroke="#3B9FD1" stroke-width="1.5"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C7.2 2 5 4.2 5 7C5 10.9 10 17 10 17C10 17 15 10.9 15 7C15 4.2 12.8 2 10 2Z" stroke="#F0D875" stroke-width="1.5"/><circle cx="10" cy="7" r="2" stroke="#F0D875" stroke-width="1.5"/></svg>
         </div>
         <div>
           <h4>Service Area</h4>
@@ -1936,7 +1938,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; widt
       </div>
       <div class="contact-detail">
         <div class="contact-icon">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#3B9FD1" stroke-width="1.5"/><path d="M10 6V10L13 12" stroke="#3B9FD1" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#F0D875" stroke-width="1.5"/><path d="M10 6V10L13 12" stroke="#F0D875" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
         <div>
           <h4>Business Hours</h4>
@@ -2941,7 +2943,7 @@ MEROTG0+pciKctGLin2OPxEX8232KREwcmgepVomWOiPsU7jexHRtPRVIo75JcU+xS1oaeBPoVSI
 gSwDxGFGOGFKISU+Lb1GfSm43sVSJgjCI3W9ibrexSiDCI3R2JujOeIKlEJwUiMDkSpLQe1SiDBT
 uNzlTuhSixUUtgRgd6bveVKLIjCKSwdpU4ClEJKSwEk5PFAwAYGVUiY3yMbYIwO9MDvUogwQWgjH
 FQ1jW8sqpFGBgYCIikDCjcb2KUQLYgDHUoWgqUTAKdxvYm43sVSIRgp3G9ibjexVIgwU7jexTuhS
-iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 48px; width: auto; display: block; object-fit: contain; background: white; border-radius: 8px; padding: 4px 8px;">
+iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; width: auto; display: block; object-fit: contain; background: white; border-radius: 8px; padding: 4px 8px;">
       </a>
       <p>Licensed Master Electrician serving Houston, TX and surrounding areas. Residential &amp; commercial electrical work done right. Se habla español.</p>
     </div>
