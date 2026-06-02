@@ -1672,10 +1672,6 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
       <div class="num">4.9★</div>
       <div class="label">Average rating across Google &amp; Yelp</div>
     </div>
-    <div class="stat-card">
-      <div class="num">24/7</div>
-      <div class="label">Emergency electrical service available</div>
-    </div>
   </div>
 </section>
 
@@ -1696,10 +1692,6 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
   <div class="trust-item">
     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#F0D875"/></svg>
     Workmanship Warranty Included
-  </div>
-  <div class="trust-item">
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#F0D875"/></svg>
-    Same-Day Emergency Response
   </div>
   <div class="trust-item">
     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5L9 5.5H13.5L10 8L11.5 12L7.5 9.5L3.5 12L5 8L1.5 5.5H6L7.5 1.5Z" fill="#F0D875"/></svg>
@@ -1867,30 +1859,32 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
     <p class="section-subtitle">Fill out the form and we'll get back to you promptly. Need immediate help? Call us directly. <strong>Se habla español.</strong></p>
   </div>
   <div class="contact-grid">
-    <form name="quote" method="POST" data-netlify="true">
+    <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="hidden" name="bot-field" style="display:none">
       <div class="form-row">
         <div class="form-group">
           <label for="fname">First name</label>
-          <input type="text" id="fname" placeholder="Jane">
+          <input type="text" id="fname" name="first-name" placeholder="Jane">
         </div>
         <div class="form-group">
           <label for="lname">Last name</label>
-          <input type="text" id="lname" placeholder="Smith">
+          <input type="text" id="lname" name="last-name" placeholder="Smith">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" id="email" placeholder="jane@example.com">
+          <input type="email" id="email" name="email" placeholder="jane@example.com">
         </div>
         <div class="form-group">
           <label for="phone">Phone number</label>
-          <input type="tel" id="phone" placeholder="(555) 000-0000">
+          <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
         </div>
       </div>
       <div class="form-group">
         <label for="service">Service needed</label>
-        <select id="service">
+        <select id="service" name="service">
           <option value="">Select a service…</option>
           <option>Residential Electrical</option>
           <option>Commercial Electrical</option>
@@ -1903,10 +1897,9 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
       </div>
       <div class="form-group">
         <label for="message">Project description</label>
-        <textarea id="message" placeholder="Tell us a bit about what you need…"></textarea>
+        <textarea id="message" name="message" placeholder="Tell us a bit about what you need…"></textarea>
       </div>
       <button type="submit" class="submit-btn">Send Request →</button>
-      <p id="form-confirm" style="display:none; font-size:14px; color:#2680AC; margin-top: 4px;">✓ Thanks! We'll be in touch within one business day.</p>
     </form>
     <div class="contact-info">
       <div class="contact-detail">
@@ -1915,7 +1908,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
         </div>
         <div>
           <h4>Phone</h4>
-          <a href="tel:+18322978390">(832) 297-8390 — 24/7 for emergencies</a>
+          <a href="tel:+18322978390">(832) 297-8390</a>
         </div>
       </div>
       <div class="contact-detail">
@@ -1942,7 +1935,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
         </div>
         <div>
           <h4>Business Hours</h4>
-          <p>Call us anytime — emergency service available 24/7</p>
+          <p>Call us anytime — we're happy to help</p>
         </div>
       </div>
     </div>
@@ -2980,13 +2973,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
   </div>
 </footer>
 
-<script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    document.getElementById('form-confirm').style.display = 'block';
-    e.target.querySelectorAll('input, select, textarea').forEach(el => el.value = '');
-  }
-</script>
+
 
 </body>
 </html>
