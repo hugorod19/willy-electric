@@ -1905,7 +1905,7 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
     <p class="section-subtitle">Fill out the form and we'll get back to you promptly. Need immediate help? Call us directly. <strong>Se habla español.</strong></p>
   </div>
   <div class="contact-grid">
-    <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+    <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true" onsubmit="return validateRecaptcha(event)">
       <input type="hidden" name="form-name" value="contact">
       <input type="hidden" name="bot-field" style="display:none">
       <div class="form-row">
@@ -1945,7 +1945,8 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
         <label for="message">Project description</label>
         <textarea id="message" name="message" placeholder="Tell us a bit about what you need…"></textarea>
       </div>
-      <div data-netlify-recaptcha="true" style="margin-bottom: 4px;"></div>
+      <div data-netlify-recaptcha="true" id="recaptcha-wrap" style="margin-bottom: 4px; border-radius: 6px; transition: box-shadow 0.2s; width: fit-content;"></div>
+      <p id="recaptcha-warning" style="display:none; font-size:13px; color:#D14343; margin: 2px 0 8px;">⚠ Please check the box to confirm you're not a robot.</p>
       <button type="submit" class="submit-btn">Send Request →</button>
     </form>
     <div class="contact-info">
@@ -3022,5 +3023,27 @@ iDCKd0dpVWERRgkIiKQEREAREQH/2Q==" alt="Willy Electric" style="height: 53px; widt
 
 
 
+<script>
+  function validateRecaptcha(e) {
+    // Find the reCAPTCHA response token (Google injects a hidden textarea named g-recaptcha-response)
+    var resp = document.querySelector('textarea[name="g-recaptcha-response"]');
+    var wrap = document.getElementById('recaptcha-wrap');
+    var warning = document.getElementById('recaptcha-warning');
+    if (!resp || resp.value.trim() === '') {
+      // Not checked — block submit and highlight
+      e.preventDefault();
+      if (wrap) {
+        wrap.style.outline = '2px solid #D14343';
+        wrap.style.boxShadow = '0 0 0 3px rgba(209,67,67,0.18)';
+      }
+      if (warning) warning.style.display = 'block';
+      return false;
+    }
+    // Checked — clear any warning and allow submit
+    if (wrap) { wrap.style.outline = 'none'; wrap.style.boxShadow = 'none'; }
+    if (warning) warning.style.display = 'none';
+    return true;
+  }
+</script>
 </body>
 </html>
